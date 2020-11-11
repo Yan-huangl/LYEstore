@@ -1,0 +1,149 @@
+.entry-all {
+	background: url(../img/normal/bg3.jpg) no-repeat center top;
+	width: 100%;
+	min-width: 1200px;
+	background-color: #f6f6f6;
+}
+
+/*主体样式*/
+.g-content {
+	background: url(../img/normal/bg4.jpg) no-repeat center top;
+	overflow: hidden;
+}
+
+/*中部信息*/
+.bulletion {
+	width: 1250px;
+	min-height: 976px;
+	margin: 0 auto;
+}
+/*详细信息展示*/
+.g-info-right .entry-show {
+	position: relative;
+	float: left;
+	width: 944px;
+}
+.entry-show h3 {
+	height: 41px;
+	line-height: 41px;
+	margin: 12px 0;
+	text-align: center;
+	font-weight: 400;
+  font-size: 26px;
+  color: #444547;
+}
+
+.xsk {
+	width: 854px;
+	min-height: 120px;
+	max-height: 290px;
+	margin: 0 auto;
+}
+.tab-xsk span {
+	font-size: 12px;
+	text-align: center;
+	padding: 2px 3px;
+	cursor: pointer;
+}
+.tab-xsk span:hover {
+	background: #d9aa67;
+	border-radius: 6px;
+	text-decoration: underline;
+	
+}
+.xsk-span-active {
+	background: #d9aa67;
+	border-radius: 6px;
+	text-decoration: underline;
+	
+}
+.send {
+	margin-top: 17px;
+	font-size: 14px;
+  color: #8e8e8e;
+  text-align: left;
+}
+.send .input-name,
+.send .input-yzm {
+	width: 262px;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+}
+.send .username,
+.send .yzm {
+	margin-right: 8px;
+}
+.send .input-name {
+	margin-right: 6px;
+}
+.send .input-yzm {
+	margin-right: 13px;
+}
+.send img {
+	width: 150px;
+	height: 40px;
+	vertical-align: middle;
+}
+.get-yzm-box {
+	position: relative;
+	width: 220px;
+	height:  65px;
+	margin: 36px auto;
+}
+.get-yzm-box .get-yzm {
+	display: block;
+	width: 220px;
+	height:  65px;
+	background: #D9AA67;
+	border: 0;
+	font-size: 24px;
+	text-align: center;
+	line-height: 65px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.send .get-yzm-box:hover::after {
+  content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 220px;
+	height: 65px;
+	background: rgb(255,255,255,0.2);
+	cursor: pointer;	
+}
+.ul-xsk {
+	max-height: 290px;
+}
+.ul-xsk li {
+	display: inline-block;
+	padding: 6px 13px 0px 0;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.xsk-txt {
+	width: 854px;
+	margin: 0 auto;
+	margin-top: 36px;
+	font-size: 14px;
+}
+.xsk-txt .xsk-txt-p1 {
+	color: #ff0000;
+	font-weight: bold;
+}
+.xsk-txt p {
+	line-height: 25px;
+	color: #444552;
+}
+.xsk-txt .xsk-txt-p2 {
+	color: #ff0000;
+}
+.xsk-txt-pic img {
+	display: block;
+	width: 600px;
+	height: 337px;
+	margin: 0 auto;
+}
+/*详细信息展示结束*/

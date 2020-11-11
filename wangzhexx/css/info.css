@@ -1,0 +1,50 @@
+.info-all{
+	background: url(../img/normal/bg3.jpg) no-repeat center top;
+	background-color: #f6f6f6;
+}
+
+/*主体区域*/
+.g-content {
+	background: url(../img/normal/bg4.jpg) no-repeat center top;
+	overflow: hidden;
+}
+/*中部信息*/
+.bulletion {
+	width: 1250px;
+	min-height: 976px;
+	margin: 0 auto;
+}
+.info-show .m-data {
+	width: 865px;
+	height: 90px;
+	margin: 33px 40px 0 40px;
+	
+}
+.m-data .m-date-title {
+	padding: 10px 0;
+  background-color: #353534;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+.m-date-title  .date-title-icon {
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	background: url(../img/normal/jinlintu.png) no-repeat -204px -165px;
+	margin: 0 8px;
+}
+.m-data .m-date-detail li {
+	float: left;
+	margin: 15px 0;
+}
+.m-data .m-date-detail li a{
+	font-size: 12px;
+	padding: 0px 16px;
+	color: #999;
+	border-right: 1px  solid #999;
+}
+.m-data .m-date-detail li a:hover{
+	color: #d9aa67;
+}
+

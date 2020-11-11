@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>王者修仙--新闻中心</title>
+		<!--新闻页样式-->
+		<link rel="stylesheet" href="css/news.css" />
+
+		<!--主要 公用样式-->
+		<link rel="stylesheet" href="css/first-base.css" />
+
+		<!--次要公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/second-base.css" />
+
+		<!--新闻页数据导入-->
+		<script src="js/news-date.js"></script>
+	</head>
+
+	<body>
+		<!--顶部标记-->
+		<a href="#" id="index-top" style="position: absolute;font-size: 0px;">游戏官网</a>
+		<!--首部游戏推荐-->
+		<div class="g-top-bar">
+			
+			<!--4399游戏图标-->
+			<a href="http://web.4399.com" target="_blank" class="icon-4399" title="4399网页游戏">4399网页游戏</a>
+			
+			<!--搜索区-->
+			<div class="search-box left">
+				<div class="form-box left">
+					<input type="text" placeholder="输入关键词" />
+					<button></button>
+				</div>
+				
+				<!--热门区域-->
+				<div class="hot-list left">
+					<label for="">热门：</label>
+					<ul>
+						<li>
+							<a href="#">弹弹堂</a>
+						</li>
+						<li>
+							<a href="#">裁决战歌</a>
+						</li>
+						<li>
+							<a href="#">莽荒纪2</a>
+						</li>
+						<li>
+							<a href="#">七站</a>
+						</li>
+						<li>
+							<a href="#">凡人修真2</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+				<!--头部菜单栏-->
+			<ul class="t-menu">
+				<li>
+					<a href="#">
+						<em class="free-add"></em>
+						<span>免费加入</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<em class="load"></em>
+						<span>立即登录</span>
+					</a>
+				</li>
+				<li class="all-hover">
+					<a href="#">
+						<em class="all-game"></em>
+						<span>全部游戏</span>
+						<em class="arrow"></em>
+						<div class="game-menu" id="game-menu-show">
+							<span class="tj">推荐游戏</span>
+							<span class="ting"><em></em>游戏大厅</span>
+							<table class="tj-all">
+								<tr>
+									<td>弹弹堂</td>
+									<td>决裁战歌</td>
+									<td>莽荒纪2</td>
+								</tr>
+								<tr>
+									<td>七站</td>
+									<td>凡人修真2</td>
+									<td>梦幻飞仙</td>
+								</tr>
+								<tr>
+									<td>神魔遮天</td>
+									<td>战神风云</td>
+									<td>盛世遮天</td>
+								</tr>
+								<tr>
+									<td>七杀</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<!--首部游戏推荐结束-->
+
+		<section class="news-all">
+			<!--主体样式-->
+			<div class="g-content">
+				<!--头部样式开始-->
+				<div class="g-header">
+					<!--主体菜单栏-->
+					<ul>
+						<li>
+							<a href="index.html">
+								<span class="item-txt">游戏官网</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="news.html">
+								<span class="item-txt">新闻中心</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li class="icon-pl">
+							<a href="info.html">
+								<span class="item-txt">游戏资料</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="activity.html">
+								<span class="item-txt">游戏活动</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="method.html">
+								<span class="item-txt">游戏攻略</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="forum.html">
+								<span class="item-txt">玩家论坛</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+					</ul>
+					
+					<!--王者修仙logo区-->
+					<a href="index.html" class="logo">
+						<span class="item-txt">王者修仙</span>
+						<em class="item-line"></em>
+					</a>
+				</div>
+				<!--头部样式结束-->
+				<div class="bulletion">
+					<!--下载扫码区域-->
+					<div class="g-download-left">
+						
+						<!--扫码下载-->
+						<div class="download-m">
+							<em class="ma-b"></em>
+							<span class="u-txt">扫码下载游戏</span>
+							<img src="img/normal/erwm-m.png" alt="" />
+							<span class="m-line"></span>
+						</div>
+						
+						<!--安卓与ios区下载-->
+						<div class="download-m-btns">
+							<div class="btn-android">
+								<a href="#">
+									<em class="btn-icon"></em>
+									<span class="btn-txt">安卓下载</span>
+								</a>
+							</div>
+							<div class="btn-ios">
+								<a href="#">
+									<em class="btn-icon"></em>
+									<span class="btn-txt">ios下载</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--下载扫码区域结束-->
+
+					<!--详细信息展示-->
+					<div class="g-info-right">
+						<div class="info-right-title">
+							<h2>新闻公告</h2>
+							<span class="titie-txt">您当前的位置：<a href="index.html">首页</a>><a href="news.html">综合</a></span>
+						</div>
+
+						
+						<div class="info-show">
+							<!--新闻菜单栏-->
+							<ul class="info-menu" id='info-menu'>
+								<li>
+									<a *href="#" class="active">综合</a>
+								</li>
+								<li>
+									<a *href="#">公告</a>
+								</li>
+								<li>
+									<a *href="#">活动</a>
+								</li>
+								<li>
+									<a *href="#">媒体 </a>
+								</li>
+							</ul>
+							
+							<!--新闻中心详情加载-->
+							<ul class="info-detail" id="info-detail">
+								<!--<li class="info-first">
+								<em></em>
+								<a href="#">
+									<span class="info-title">推荐</span>
+									<span class="info-txt ellipsis">《王者修仙》电脑版停运公告</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">4月4号停服声明</span>
+									<span class="date">04/04</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 12月16日9:00-11:00更新公告</span>
+									<span class="date">03/26</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 11月2日9:00-11:00更新公告</span>
+									<span class="date">11/12</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 11月15日9:00-11:00更新公告</span>
+									<span class="date">03/05</span>
+								</a>
+							</li>-->
+							</ul>
+
+						</div>
+						
+						<!--动态页数加载-->
+						<div class="num" id="num">
+							<!--<span >首页</span>
+						<span class="num-active">1</span>
+						<span>2</span>
+						<span>尾页</span>-->
+						</div>
+					</div>
+          <!--详细信息展示结束-->
+				</div>
+				<!--返回首部按钮-->
+				<div class="top-btn">
+					<a class="re-top" href="#index-top"></a>
+				</div>
+				<!--主体样式结束-->
+			</div>
+			<!--底部区域-->
+			<div class="g-footer">
+				<div class="g-footer-m">
+					<div class="u-link">
+						<a href="#" class="u-link-item">关于本站</a>
+						<a href="#" class="u-link-item">负责声明</a>
+						<a href="#" class="u-link-item">联系我们</a>
+						<a href="#" class="u-link-item">用户协议</a>
+					</div>
+					<p class="u-advice">
+						健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+					</p>
+					<p class="u-crdl">
+						<a href="#">网络文化经营许可证：</a>
+						<img src="img/normal/net_wh.png" alt="" />
+						<a href="#">闽网文[2018]9590-427号</a> <img src="img/normal/game_ba.png" alt="" />
+						<a href="#">[2018]M-CSG0169号 </a>
+						文明办网文明上网 纠纷处理 游戏适用年龄：16+
+						<a href="#">未成年人家长监护</a>
+					</p>
+					<p class="u-crdl">
+						新广出审[2017]8621号 软著登记号：2016SR368695 粤ICP备11010538号-7网络文化经营许可证 粤网文[2014]2168-467号 新出网证(粤)字049号
+					</p>
+					<p class="u-copyright">Copyright © 2006- 2020 web.4399.com</p>
+				</div>
+
+			</div>
+			<!--底部区域结束-->
+		</section>
+		<script>
+			function menu_m(index, len) {
+				let html = '';
+				let num = 0;
+				let max_len = 20;
+
+				for(let i = len * max_len; i < info[index].length && num < max_len; i++, num++) {
+					html += '<li class="info-other">';
+					html += '<em></em>'
+					html += '<a href="#">'
+					html += '<span class="info-title">' + info[index][i].title + '</span>'
+					if(index == 3) {
+						html += '<span class="info-txt txt-color ellipsis ">' + info[index][i].txt + '</span>'
+					} else {
+						html += '<span class="info-txt ellipsis">' + info[index][i].txt + '</span>'
+					}
+					html += '<span class="date">' + info[index][i].data + '</span>'
+					html += '</a>'
+					html += '</li>'
+					document.getElementById('info-detail').innerHTML = html;
+				}
+			}
+			menu_m(0, 0);
+			count = Math.ceil(info[0].length / 20);
+			createNum();
+			clickNum(0)
+			let menu = document.getElementById('info-menu');
+			let index = 0;
+			for(let j = 0; j < info.length; j++) {
+				menu.getElementsByTagName('li')[j].onmousemove = () => {
+					menu_m(j, 0);
+					count = Math.ceil(info[j].length / 20);
+					createNum();
+					chang(index, j);
+					index = j;
+					clickNum(index);
+				}
+			}
+
+			function chang(index, j) {
+				menu.getElementsByTagName('a')[index].className = '';
+				menu.getElementsByTagName('a')[j].className = 'active';
+
+			}
+
+			function createNum() {
+				let nums = document.getElementById('num');
+				nums.innerHTML = '';
+				if(count > 1) {
+					let start = document.createElement('span');
+					start.appendChild(document.createTextNode("首页"))
+					nums.appendChild(start)
+					for(let i = 0; i < count; i++) {
+						let temp = document.createElement('span')
+						temp.appendChild(document.createTextNode(i + 1))
+						if(i == 0) {
+							temp.className = 'num-active';
+						}
+						nums.appendChild(temp)
+					}
+					let end = document.createElement('span');
+					end.appendChild(document.createTextNode("尾页"))
+					nums.appendChild(end)
+				}
+			}
+
+			function clickNum(index) {
+				if(count > 1) {
+					let spans = document.getElementById('num').getElementsByTagName('span');
+					spans[0].onclick = () => {
+						menu_m(index, 0);
+						clearNumActive(spans)
+						spans[1].className = 'num-active'
+					}
+					spans[spans.length - 1].onclick = () => {
+						menu_m(index, spans.length - 3);
+						clearNumActive(spans)
+						spans[spans.length - 2].className = 'num-active'
+					}
+					for(let i = 1; i < spans.length - 1; i++) {
+						spans[i].onclick = () => {
+							menu_m(index, i - 1);
+							clearNumActive(spans)
+							spans[i].className = 'num-active'
+						}
+					}
+
+				}
+			}
+
+			function clearNumActive(spans) {
+				for(let i = 0; i < spans.length; i++)
+					spans[i].className = '';
+			}
+		</script>
+	</body>
+
+</html>

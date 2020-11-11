@@ -1,0 +1,612 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+input,
+button {
+	outline: none;
+}
+button {
+	border: 0px;
+}
+.ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/*安卓,ios下载区*/
+.btn-android,
+.btn-ios {
+	position: relative;
+	width: 188px;
+	height: 49px;
+}
+.btn-android:hover::after,
+.btn-ios:hover::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 188px;
+	height: 49px;
+	background: rgb(0,0,0,0.2);
+	cursor: pointer;
+}
+.btn-android {
+	background: #FFD900;
+}
+.btn-ios {
+	margin: 8px 0 0 0;
+	background: #383533;
+}
+.btn-android a{
+	color: #353534;
+}
+.btn-ios a{
+	color: #FFFFFF;
+}
+.btn-android a em {
+	background: url('../img/normal/jinlintu.png') no-repeat -204px -43px;
+}
+.btn-ios a em {
+	background: url('../img/normal/jinlintu.png') no-repeat -204px -79px;;
+}
+a>.btn-icon {
+	display: block;
+  float: left;
+	width: 26px;
+	height: 32px;
+	margin: 8px 12px 8px 48px;
+}
+
+a>.btn-txt {
+	float: left;
+	margin: 14px 0;
+}
+/*安卓,ios下载区结束*/
+
+
+/*首部游戏推荐*/
+.g-top-bar {
+	position: relative;
+	height: 35px;
+	min-width: 1200px;
+	width: 100%;
+}
+.left {
+	float: left;
+}
+.icon-4399 {
+	float: left;
+	display: block;
+	width: 149px;
+	height: 35px;
+	background-image: url('../img/normal/game-icon.png');
+	background-position: 0 -115px;
+	font-size: 0px;
+	border-right: 1px solid #6A6A6A;
+}
+.search-box {
+	width: 688px;
+	height: 24px;
+	padding: 6px 0px 6px 5px;
+	line-height: 24px;
+	font-size: 11px;
+	color: #777;
+	
+}
+.form-box {
+	width: 160px;
+}
+.form-box input {
+	float: left;
+	width: 129px;
+	height: 24px;
+	text-indent: 5px;
+	font-size: 11px;
+}
+.form-box button {
+	float: left;
+	width: 26px;
+	height: 24px;
+	background: url('../img/normal/game-icon.png') 0 -150px no-repeat;
+}
+.form-box button:hover {
+	cursor: pointer;
+}
+.hot-list {
+	margin-left: 11px;
+}
+.hot-list label {
+	float: left;
+	font-size: 13px;
+	color: black;
+	
+}
+.hot-list ul {
+	float: left;
+}
+.hot-list ul li{
+	float: left;
+}
+.hot-list ul li a{
+	color: #6a6a6a;
+	padding: 0 3px;
+}
+.hot-list ul li a:hover {
+	color: #237db2;
+	text-decoration: underline;
+}
+.t-menu {
+	display: flex;
+	width: 323px;
+	height: 34px;
+	float: right;
+}
+.t-menu li a{
+	color: #565656;
+	font-size: 13px;
+}
+.t-menu li a:hover{
+	color: orange;
+}
+.t-menu li{
+	flex: 1;
+	float: right;
+	height: 34px;
+	line-height: 34px;
+	padding: 0px 9px;
+	border-left: 1px solid #6A6A6A;
+}
+.t-menu li:last-child{
+	margin-right: 10px;
+}
+.t-menu em {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 10px 3px 10px 0;
+}
+.free-add {
+	background: url('../img/normal/game-icon.png') no-repeat -48px -84px;
+	transform: all .2s ease-out;
+}
+.t-menu li:hover .free-add {
+	animation: free-add-run .2s linear;
+	animation-fill-mode: forwards;
+}
+@keyframes free-add-run {
+	from{background: url(../img/normal/game-icon.png) no-repeat -48px -84px;}
+	to{background: url(../img/normal/game-icon.png) no-repeat -48px -100px;}
+}
+.load {
+	background: url(../img/normal/game-icon.png) no-repeat -121px 0;
+}
+.t-menu li:hover .load {
+	animation: load-run .2s linear;
+	animation-fill-mode: forwards;
+}
+@keyframes load-run {
+	from{background: url(../img/normal/game-icon.png) no-repeat -121px 0;}
+	to{background: url(../img/normal/game-icon.png) no-repeat -121px -16px;}
+}
+.all-game {
+	background: url(../img/normal/game-icon.png) no-repeat -96px -84px;
+}
+.t-menu li:hover .all-game {
+	animation: all-game-run .2s linear;
+	animation-fill-mode: forwards;
+}
+@keyframes all-game-run {
+	from{background: url(../img/normal/game-icon.png) no-repeat -96px -84px;}
+	to{background: url(../img/normal/game-icon.png) no-repeat -96px -100px;}
+}
+.t-menu span {
+	float: left;
+}
+.t-menu .arrow {
+	display: inline-block;
+	float: left;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border-width: 4px;
+	border-style: solid dashed dashed dashed;
+	border-color: #6a6a6a transparent transparent;
+	margin: 15px 0 0 3px;
+	transition: all .2s;  
+}
+.t-menu li:hover .arrow {
+	border-color: orange transparent transparent;
+}
+.t-menu li:last-child {
+	position: relative;
+}
+.t-menu .all-hover a:hover .game-menu {
+	display: block;
+}
+.game-menu {
+	display: none;
+	position: absolute;
+	top: 35px;
+  right: -10px;
+	width: 401px;
+	height: 185px;
+	z-index: 10;
+	background: #FFFFFF;
+}
+.game-menu .tj {
+	padding: 0px 7px;
+	color: #FFFFFF;
+	background: #ff5d13;
+	float: left;
+	margin: 5px;
+}
+.game-menu .ting {
+	float: right;
+	padding: 0px 7px;
+	color: #FFFFFF;
+	background: #ff5d13;
+	text-align: right;
+	margin: 5px 10px;
+}
+.ting em {
+	width: 16px;
+	height: 16px;
+	background: url(../img/normal/game-icon.png) no-repeat -112px -84px;
+}
+
+.tj-all {
+	float: left;
+	border: 1px solid #777777;
+	border-collapse: collapse;
+}
+.game-menu .ting:hover,
+.game-menu .tj:hover {
+	text-decoration: underline;
+}
+.game-menu .tj-all td {
+	border-collapse: collapse;
+	font-size: 12px;
+	cursor: pointer;
+	color: #252525;
+	width: 133px;
+	padding: 0px 0 0 10px;
+	border: 1px solid #777777;
+}
+.game-menu .tj-all td:hover {
+	color: #ff5d13;
+	text-decoration: underline;
+	background: #f6f6f6;
+}
+
+/*首部游戏推荐结束*/
+
+
+/*主体内容*/
+.g-content {
+	width: 1200px;
+	min-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+
+/*头部样式开始*/
+.g-header {
+	position: relative;
+	height: 530px;
+	/*background: olivedrab;*/
+}
+.g-header ul {
+	float: left;
+	width: 1300px;
+	height: 100px;
+}
+.g-header ul li {
+	float: left;
+	height: 100px;
+	margin-right: 90px;
+	line-height: 100px;
+}
+.g-header ul li:hover a {
+	padding-bottom: 3px;
+	/*border-bottom: 2px solid #ffe57d;*/
+}
+.g-header ul li a{
+	position: relative;
+	font-size: 18px;
+	color: white;
+}
+.g-header ul li a .item-line {
+	position: absolute;
+	top: 28px;
+	left: 50%;
+	width: 0px;
+	height: 2px;
+	background: #FFE57D;
+	transform: all .2s linear;
+}
+
+.g-header ul li:hover .item-line {
+	animation: item-line-run .2s linear;
+	animation-fill-mode: forwards;
+}
+@keyframes item-line-run{
+	from{width: 0px;left: 50%}
+	50% {width: 25px;left: 35%}
+	to{width: 50px;left: 15%}
+}
+.g-header .logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 157px;
+  height: 106px;
+	margin-left: -78px;
+	background: url(../img/normal/logo.png);
+	font-size: 0px;
+}
+.g-header ul .icon-pl {
+	margin-right: 385px;
+}
+/*头部样式结束*/
+
+/*公告区*/
+.info-show {
+	position: relative;
+	float: left;
+	width: 560px;
+	height: 280px;
+}
+.show-ab {
+	margin-left:  640px;
+}
+.info-show .info-menu {
+	border-bottom: 1px solid #6A6A6A;
+	height: 50px;
+	margin: 0 18px;
+}
+.info-show .info-menu>li {
+	float: left;
+	height: 50px;
+	cursor: pointer;
+}
+.info-show .info-menu>li a{
+	display: inline-block;
+	padding: 15px 13px 7px 13px;
+	margin-right: 34px;
+	font-size: 18px;
+	color: #252525;
+	cursor: pointer;
+}
+.info-show .info-menu>li a:hover{
+	color: #896836;
+	border-bottom: 3px solid #896836;
+	border-radius: 6px;
+	
+}
+.info-show .info-menu>li .active {
+	color: #896836;
+	border-bottom: 3px solid #896836;
+	border-radius: 6px;
+}
+.info-add {
+	position: absolute;
+  display: block;
+  top: 9px;
+  right: 25px;
+  font-size: 25px;
+	color: #000000;
+}
+.info-add:hover {
+	color: #6A6A6A;
+	cursor: pointer;
+}
+.info-show .info-detail {
+	position: relative;
+	margin: 18px 0 0 0;
+}
+.info-show .info-detail .info-first {
+	height: 31px;
+	margin: 0 18px;
+	background: #f5f7f9;
+	line-height: 31px;
+}
+.info-show .info-detail .info-other {
+	position: relative;
+	height: 17px;
+	line-height: 17px;
+}
+.info-first .info-title {
+	display: inline-block;
+	width: 48px;
+	height: 31px;
+	line-height: 33px;
+	background: #ff4527;
+	margin-right: 15px;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 12px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.info-txt {
+	width: 450px;
+	font-weight: bold;
+	color: #ff0081;
+	font-size: 14px;
+	
+}
+.info-detail .info-other {
+	margin: 20px 18px;
+}
+.info-detail .info-other .info-title {
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 15px;
+	color: #6b6b6b;
+	height: 17px;
+	line-height: 17px;
+}
+.info-detail .info-other .info-txt {
+	display: inline-block;
+	width: 400px;
+}
+
+.info-detail .info-other .txt-color {
+	color: #6b6b6b;
+}
+.info-detail .info-other .date {
+	font-size: 14px;
+	color: #6b6b6b;
+	float: right;
+}
+.info-detail li:hover em{
+	display: block;
+}
+
+.info-detail li em{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ff0091;
+}
+.info-detail .info-first em{
+	top: 12px;
+  left: 4px;
+  display: none;
+}
+.info-detail .info-other em{
+  top: 7px;
+  left: -12px;
+  display: none;
+}
+/*公告区结束*/
+
+
+
+
+/*返回首部按钮*/
+.top-btn {
+	height: 40px;
+}
+.re-top{
+	float: right;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url(../img/normal/jinlintu.png) no-repeat -92px -92px;
+}
+.re-top:hover {
+	background: url(../img/normal/jinlintu.png) no-repeat -48px -92px;
+}
+/*返回首部按钮结束*/
+
+
+/*后台联系区域*/
+.g-btns {
+	position: relative;
+	min-width: 1200px;
+	height: 71px;
+	background: #252525;
+	text-align: center;
+  margin: 0 auto;
+}
+.g-btns-ul {
+	height: 71px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.g-btns-ul li {
+	display: inline-block;
+	margin: 30px 38px 0 38px;
+}
+.contact-txt {
+	display: inline-block;
+	height: 39px;
+	line-height: 5px;
+	margin-left: 8px;
+	vertical-align: middle;
+	font-weight: 700;
+  font-size: 14px;
+  color: #f0f0f0;
+	
+}
+.contact-pic {
+	display: inline-block;
+	width: 40px;
+	height: 39px;
+	background: url(../img/normal/jinlintu.png) no-repeat -160px 0;
+}
+.user-pic {
+	display: inline-block;
+	width: 36px;
+	height: 39px;
+	background: url(../img/normal/jinlintu.png) no-repeat -204px 0;
+	
+}
+.msg-pic {
+	display: inline-block;
+	width: 38px;
+	height: 37px;
+	background: url(../img/normal/jinlintu.png) no-repeat 0px -140px;
+}
+.contact-pic:hover {
+	background: url(../img/normal/jinlintu.png) no-repeat -113px -48px;
+}
+.user-pic:hover {
+	background: url(../img/normal/jinlintu.png) no-repeat -160px -84px;
+	
+}
+.msg-pic:hover {
+	background: url(../img/normal/jinlintu.png) no-repeat -160px -43px;
+}
+/*后台联系区域结束*/
+
+
+/*底部样式*/
+.g-footer {
+	min-width: 1200px;
+	height: 178px;
+	background: #252525;
+	color: #8e8c8c;
+	font-size: 12px;
+}
+.g-footer .g-footer-m {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.u-link-item {
+	display: inline-block;
+	margin: 30px 12px 11px 0;
+}
+.g-footer a {
+	color: #8e8c8c;
+}
+.g-footer-m p {
+	margin: 0 0 11px 0;
+}
+.u-crdl img {
+	width: 10px;
+	height: 10px;
+}
+.u-crdl a {
+	text-decoration: underline;
+}
+/*底部样式结束*/

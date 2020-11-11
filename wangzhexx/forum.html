@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>王者修仙--玩家论坛</title>
+		<link rel="stylesheet" type="text/css" href="css/forum.css"/>
+		<script src="js/forum.js"></script>
+	</head>
+	<body>
+		<!--头部区域-->
+		<section class="f-header">
+			<div class="header-top">
+				
+				<!--4399游戏吧图标-->
+				<a class="game-icon" href="#" title="4399游戏吧"><img src="img/forum/game-icon.gif" alt="" />4399游戏吧</a>
+				
+				<!--头部菜单栏-->
+				<ul class="f-nav">
+					<li ><a href="index.html" class="nav-active">首页</a></li>
+					<li><a href="#">群组</a></li>
+					<li><a href="#">积分</a></li>
+					<li><a href="#">充值</a></li>
+					<li><a href="#">小游戏</a></li>
+				</ul>
+				
+				<!--右侧头部登录注册区-->
+				<ul class="f-person">
+					<li><a href="#" id="load">登录</a></li>
+					<li><a href="#" id="reg">注册</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--头部区域结束--> 
+		
+		<!--主体区域-->
+		<section class="content">
+			<div class="f-content">
+				
+				<!--小提示:请先登录部分-->
+				<div class="u-hd">
+					<h2>
+						<span class="u-ico" ></span>
+						<span class="ico-txt" >请先登录</span>
+					</h2>
+				</div>
+				<div class="u-logform">
+					<div class="j-unlogin">
+						<p class="regtip">还不是4399用户？现在免费注册4399用户，便能立即体验新潮、好玩的游戏哦！</p>
+					  <a href="#" class="u-logbtn" id="load-pic">登录</a>
+					  <a href="#" class="u-regbtn" id="reg-pic">立即注册</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--主体区域结束-->
+		
+		<!--尾部区域-->
+		<section class="footer">
+			<div class="foot-txt">
+				<div class="cinfo">
+					<p>4399游戏吧 专业的中文休闲游戏社区</p>
+				  <p class="my-service">服务热线：400-633-4399</p>
+				</div>
+				<div class="linfo">
+					<ul class="my-fnav">					
+						<li><a href="#">4399新浪官方微博 </a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">未成年人家长监护</a></li>
+						<li><a href="#">纠纷处理</a></li>
+						<li><a href="#">隐私政策</a></li>
+						<li><a href="#">客服中心</a></li>
+						<li><a href="#" class="color-t">诚聘英才 </a></li>
+						<li><a href="#">关于我们</a></li>
+					</ul>
+					<p class="my-cred"><a href="#">ICP证：闽B2-20040099</a> <a href="#">不良信息举报中心</a> <em></em> <a href="#">新出网证（闽）字06号 </a><a href="#">新出网证（闽）字06号</a></p>
+					<p class="my-cp">Copyright©2004 -<script>document.write(new Date().getFullYear())</script>
+          2020
+        4399.com All Rights Reserved. 四三九九网络股份有限公司 版权所有
+ </p>
+					<p>温馨提示: 抵制不良游戏, 拒绝盗版游戏, 注意自我保护, 谨防受骗上当, 适度游戏益脑, 沉迷游戏伤身, 合理安排时间, 享受健康生活</p>
+				</div>
+			</div>
+		</section>
+		<!--尾部区域结束-->
+		
+		<!--遮罩层-->
+		<div class="zzc" id="zzc"></div>
+		
+	  <!--  登录注册部分-->
+		<div class="register" id="register">
+			
+			<!--登录注册选项卡-->
+			<ul class="login-tag" id="login-tag">
+				<li><a class="login-tag-active" href="javascript:void(0)">登录</a></li>
+				<li><a href="javascript:void(0)">短信登录</a></li>
+				<li><a href="javascript:void(0)">快速注册</a></li>
+				<li><a href="javascript:void(0)">二维码登录</a></li>
+			</ul>
+			<span class="login-close" id="login-close"></span>
+			
+			<!--登录区域-->
+			<div class="login-tagnum" id="login-tagnum">
+				<div class="tagnum">
+					<div class="login-hor">
+						<span class="ftip">其他登录</span>
+						<a href="javascript:void(0)" class="lg1" id="duanx">
+							<em></em>
+							短信验证码
+						</a>
+						<a href="javascript:void(0)" class="lg2">
+							<em></em>
+							QQ
+						</a>
+						<a href="javascript:void(0)" class="lg3">
+							<em></em>
+							微信
+						</a>
+						<a href="javascript:void(0)" class="lg4">
+							<em></em>
+							微博
+						</a>
+					</div>
+					<div class="filtit">
+						<span class="line lline"></span>
+						<span class="line rline"></span>
+						<h3 class="tit">4399账号登录</h3>
+					</div>
+					<form action="" class="form-login">
+						<div class="form-p">
+							<label for="">
+								4399用户名
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text" placeholder="请输入4399账号或手机号" required="required" class="input-l"/>
+							
+						</div >
+						<div class="form-p">
+						  <label for="">
+								密码
+							  <em class="login_required">* </em>
+							</label>
+							<input type="passsword" required="required" class="input-l"/>
+						</div>
+						<div class="form-p form-p-other">
+							<input type="checkbox" name="autoLogin" />
+							<label for="">自动登录</label>
+							<label for="">忘记密码</label>
+						</div>
+						<div class="form-p form-lr">
+							<input type="submit" value="登录"/>
+							<button>注册</button>
+						</div>
+					</form>
+				</div>
+				
+				<!--短信验证码登录-->
+				<div class="tagnum" style="display: none;">
+					<div class="login-hor">
+						<span class="ftip">其他登录</span>
+						<a href="javascript:void(0)" class="lg2">
+							<em></em>
+							QQ
+						</a>
+						<a href="javascript:void(0)" class="lg3">
+							<em></em>
+							微信
+						</a>
+						<a href="javascript:void(0)" class="lg4">
+							<em></em>
+							微博
+						</a>
+					</div>
+					<div class="filtit">
+						<span class="line lline"></span>
+						<span class="line rline"></span>
+						<h3 class="tit">短信登录</h3>
+					</div>
+					<form action="" class="form-login">
+						<div class="form-p">
+							<label for="">
+								手机号
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text" placeholder="请输入手机号" required="required" class="input-l"/>
+							
+						</div >
+						<div class="form-p">
+						  <label for="">
+								验证码
+							  <em class="login_required">* </em>
+							</label>
+							<div class="yzm-g">
+								<input type="passsword" required="required" class="input-l"/>
+								<em class="yzm-get-txt"></em>
+							</div>
+							
+						</div>
+						<div class="form-p form-lr">
+							<input type="submit" value="登录" class="dx-login"/>
+							<input type="checkbox" name="autoLogin" class="dx-auto"/>
+							<label for="" class="dx-la">自动登录</label>
+						</div>
+					</form>
+				</div>
+				
+				<!--注册区域-->
+				<div class="tagnum" style="display: none;">
+					<div class="login-hor">
+						<span class="ftip">其他登录</span>
+						<a href="javascript:void(0)" class="lg1" id="dxyzm">
+							<em></em>
+							短信验证码
+						</a>
+						<a href="javascript:void(0)" class="lg2">
+							<em></em>
+							QQ
+						</a>
+						<a href="javascript:void(0)" class="lg3">
+							<em></em>
+							微信
+						</a>
+						<a href="javascript:void(0)" class="lg4">
+							<em></em>
+							微博
+						</a>
+					</div>
+					<div class="filtit">
+						<span class="line lline"></span>
+						<span class="line rline"></span>
+						<h3 class="tit">4399账号注册</h3>
+					</div>
+					<form action="" class="form-login">
+						<div class="form-p">
+							<label for="" class="form-lade-right">
+								4399用户名
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text" placeholder="请输入4399账号或手机号" required="required" class="input-l"/>
+							<span class="reg-tip">3-20个字符，由字母跟数字组成</span>
+						</div >
+						<div class="form-p" style="margin-left: -120px;">
+						  <label for="" class="form-lade-right">
+								密码
+							  <em class="login_required">* </em>
+							</label>
+							<input type="passsword" required="required" class="input-l"/>
+							<span class="reg-tip"></span>
+						</div>
+						
+						<div class="form-p" style="margin-left: -180px;">
+						  <label for="" class="form-lade-right">
+								再次输入密码
+							  <em class="login_required">* </em>
+							</label>
+							<input type="passsword" required="required" class="input-l"/>
+							<span class="reg-tip" ></span>
+						</div>
+						<div class="form-p">
+							<label for="">
+								QQ号
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text"  required="required" class="input-l"/>
+							<span class="reg-tip">(选填)可通过QQ号找回密码</span>
+						</div >
+						<div class="form-p">
+							<label for="">
+								姓名
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text"  required="required" class="input-l"/>
+							<span class="reg-tip">防沉迷法要求填写姓名</span>
+						</div >
+						<div class="form-p">
+							<label for="">
+								身份证号
+							  <em class="login_required">* </em>
+							</label>
+							<input type="text"  required="required" class="input-l"/>
+							<span class="reg-tip reg-txt">不知道身份证号码</span>
+						</div >
+						<div class="form-p form-lr">
+							<input type="submit" value="登录" class="ks-reg"/>
+							<input type="checkbox" name="agree" class="dx-auto"/>
+							<label for="" class="dx-la">已同意
+							   <span class="reg-txt">用户协议</span>
+							</label>
+							<input type="checkbox" name="autoLogin" class="dx-auto"/>
+							<label for="" class="dx-la">自动登录</label>
+						</div>
+					</form>
+				</div>
+				
+				<!--扫码下载登录-->
+				<div class="tagnum" style="display: none;">
+					<div class="qr-imgdiv">
+						<div class="qr-image">
+						  <img src="img/forum/qr.jpg" alt="" />
+						  <p>用<span>安卓版游戏盒</span>
+						  	扫描
+						  </p>
+						</div>
+						<div class="qr-tipimg"></div>
+					</div>
+					
+					<div class="qr-msg">
+						<a href="#">立即下载</a>
+						<a href="#">使用帮助</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--登录注册区域结束-->
+	</body>
+</html>

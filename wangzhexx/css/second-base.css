@@ -1,0 +1,123 @@
+/*下载扫码区域*/
+.g-download-left {
+	float: left;
+	width: 245px;
+	height: 366px;
+}
+.download-m {
+	position: relative;
+	width: 245px;
+	height: 260px;
+	text-align: center;
+	background: #ffffff;
+}
+.download-m .ma-b {
+	padding: 7px 0;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../img/normal/jinlintu.png) no-repeat -60px -140px;
+  margin-right: 6px;
+}
+.g-download-left .download-m .m-line {
+	position: absolute;
+	top: 0px;
+	left: 22px;
+	width: 196px;
+	height: 16px;
+	background: url(../img/normal/line-m.png) no-repeat center top;
+	animation: line-run 2s linear infinite;
+}
+@keyframes line-run {
+	from{ top: 40px}
+	to{ top: 220px;}
+}
+.download-m .u-txt {
+	padding: 12px 0;
+	display: inline-block;
+	font-size: 16px;
+	color: #413e3e;
+}
+.download-m img {
+	width: 196px;
+	height: 193px;
+}
+.g-download-left .btn-android,
+.g-download-left .btn-ios {
+	position: relative;
+	width: 245px;
+	height: 49px;
+}
+.g-download-left a>.btn-icon {
+	display: block;
+  float: left;
+	width: 26px;
+	height: 32px;
+	margin: 8px 12px 8px 74px;
+}
+.g-download-left a>.btn-txt {
+	float: left;
+	margin: 14px 0;
+}
+.g-download-left .btn-android:hover::after,
+.g-download-left .btn-ios:hover::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 245px;
+	height: 49px;
+	background: rgb(0,0,0,0.2);
+	cursor: pointer;
+}
+/*下载扫码区域结束*/
+
+/*右侧详细信息展示 */
+.g-info-right {
+	position: relative;
+	float: left;
+	width: 944px;
+	min-height: 976px;
+	margin: 0 0 0 10px;
+	background: #ffffff;
+}
+.info-right-title {
+	width: 100%;
+	height: 70px;
+	background: #d9aa67;
+}
+.info-right-title h2 {
+	position: relative;
+	float: left;
+	height: 70px;
+	line-height: 70px;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 52px;
+}
+.info-right-title h2::before {
+	content: '';
+	position: absolute;
+	top: 24px;
+  left: -20px;
+	width: 7px;
+	height: 25px;
+	background: #FFFFFF;
+}
+.info-right-title .titie-txt{
+	float: right;
+	height: 70px;
+	line-height: 70px;
+	font-size: 14px;
+  color: #f0ddc2;
+  margin-right: 33px;
+}
+.info-right-title .titie-txt a {
+	color: #f0ddc2;
+}
+.info-right-title .titie-txt a:hover {
+	text-decoration: underline;
+}
+/*右侧详细信息展示结束 */

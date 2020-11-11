@@ -1,0 +1,58 @@
+.news-all{
+	background: url(../img/normal/bg3.jpg) no-repeat center top;
+	background-color: #f6f6f6;
+}
+
+/*主体区域*/
+.g-content {
+	background: url(../img/normal/bg4.jpg) no-repeat center top;
+	overflow: hidden;
+}
+/*中部信息*/
+.bulletion {
+	width: 1250px;
+	min-height: 976px;
+	margin: 0 auto;
+}
+
+/*详细信息展示*/
+
+.g-info-right .info-show {
+	position: relative;
+	float: left;
+	width: 944px;
+}
+.g-info-right .info-detail .info-other {
+	margin: 20px 30px;
+}
+.g-info-right .num {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	height: 50px;
+	margin-left: -30px;
+	width: 944px;
+}
+.g-info-right .num span{
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	color: #666;
+	padding: 0 5px;
+  margin: 0 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.g-info-right .num span:hover,
+.num-active {
+	background: #d9aa67;
+	border-radius: 5px;
+}
+/*详细信息展示结束*/
+
+/*返回顶部按钮*/
+.top-btn {
+	float: left;
+	width: 100%;
+	margin-top: 14px;
+}

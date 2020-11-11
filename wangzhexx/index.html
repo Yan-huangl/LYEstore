@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>王者修仙官网</title>
+		<!--首页样式-->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<!--主要公用样式-->
+		<link rel="stylesheet" type="text/css" href="css/first-base.css" />
+
+		<!--首页数据导入-->
+		<script src='js/all_data.js'>
+		</script>
+	</head>
+
+	<body>
+		<!--顶部标记-->
+		<a href="#" id="index-top" style="position: absolute;font-size: 0px;">游戏官网</a>
+
+		<!--首部游戏推荐-->
+		<div class="g-top-bar">
+
+			<!--4399游戏图标-->
+			<a href="http://web.4399.com" target="_blank" class="icon-4399" title="4399网页游戏">4399网页游戏</a>
+
+			<!--搜索区-->
+			<div class="search-box left">
+				<div class="form-box left">
+					<input type="text" placeholder="输入关键词" />
+					<button></button>
+				</div>
+
+				<!--热门区域-->
+				<div class="hot-list left">
+					<label for="">热门：</label>
+					<ul>
+						<li>
+							<a href="#">弹弹堂</a>
+						</li>
+						<li>
+							<a href="#">裁决战歌</a>
+						</li>
+						<li>
+							<a href="#">莽荒纪2</a>
+						</li>
+						<li>
+							<a href="#">七站</a>
+						</li>
+						<li>
+							<a href="#">凡人修真2</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--头部菜单栏-->
+			<ul class="t-menu">
+				<li>
+					<a href="#">
+						<em class="free-add"></em>
+						<span>免费加入</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<em class="load"></em>
+						<span>立即登录</span>
+
+					</a>
+				</li>
+				<li class="all-hover">
+					<a href="#">
+						<em class="all-game"></em>
+						<span>全部游戏</span>
+						<em class="arrow"></em>
+						<div class="game-menu" id="game-menu-show">
+							<span class="tj">推荐游戏</span>
+							<span class="ting"><em></em>游戏大厅</span>
+							<table class="tj-all">
+								<tr>
+									<td>弹弹堂</td>
+									<td>决裁战歌</td>
+									<td>莽荒纪2</td>
+								</tr>
+								<tr>
+									<td>七站</td>
+									<td>凡人修真2</td>
+									<td>梦幻飞仙</td>
+								</tr>
+								<tr>
+									<td>神魔遮天</td>
+									<td>战神风云</td>
+									<td>盛世遮天</td>
+								</tr>
+								<tr>
+									<td>七杀</td>
+								</tr>
+							</table>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--首部游戏推荐结束-->
+
+		<section class="index-all">
+			<!--主体样式-->
+			<div class="g-content">
+
+				<!--头部样式开始-->
+				<div class="g-header">
+
+					<!--主体菜单栏-->
+					<ul>
+						<li>
+							<a href="index.html">
+								<span class="item-txt">游戏官网</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="news.html">
+								<span class="item-txt">新闻中心</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li class="icon-pl">
+							<a href="info.html">
+								<span class="item-txt">游戏资料</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="activity.html">
+								<span class="item-txt">游戏活动</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="method.html">
+								<span class="item-txt">游戏攻略</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+						<li>
+							<a href="forum.html">
+								<span class="item-txt">玩家论坛</span>
+								<em class="item-line"></em>
+							</a>
+						</li>
+					</ul>
+					
+					<!--王者修仙logo区-->
+					<a href="index.html" class="logo">
+						<span class="item-txt">王者修仙</span>
+						<em class="item-line"></em>
+					</a>
+				</div>
+				<!--头部样式结束-->
+
+				<!--下载区域-->
+				<div class="g-download-index">
+					<div class="download-vide left">
+						<span class="u-video"></span>
+					</div>
+					
+					<!--扫码下载-->
+					<div class="download-ma left">
+						<img src="img/index/erweima.png" alt="" />
+						<span class="m-line"></span>
+						<span class="u-txt">扫码下载游戏</span>
+					</div>
+					
+					<!--安卓与ios区下载-->
+					<div class="download-m-btns left">
+						<div class="btn-android">
+							<a href="#">
+								<em class="btn-icon"></em>
+								<span class="btn-txt">安卓下载</span>
+							</a>
+						</div>
+						<div class="btn-ios">
+							<a href="#">
+								<em class="btn-icon"></em>
+								<span class="btn-txt">ios下载</span>
+							</a>
+						</div>
+					</div>
+					<div class="btn-computer left"></div>
+				</div>
+				<!--下载区域结束-->
+
+				<!--轮播与公告区域-->
+				<div class="g-section-info">
+
+					<!--左侧小轮播区域-->
+					<div class="info-lunbo" id="container">
+
+						<!--上一个按钮-->
+						<div id="pre">
+							<</div>
+								
+								<!--下一个按钮--> 
+								<div id="next">></div>
+								
+								<!--轮播图片区域-->
+								<div id="list" style="left:0px;top:0px">
+									<a href="#"><img src="img/index/lun1-1.jpg" alt="1"></a>
+									<a href="#"><img src="img/index/lun1-2.jpg" alt="2"></a>
+									<a href="#"><img src="img/index/lun1-3.jpg" alt="3"></a>
+									<a href="#"><img src="img/index/lun1-4.jpg" alt="4"></a>
+									<a href="#"><img src="img/index/lun1-5.jpg" alt="5"></a>
+								</div>
+								
+								<!--圆点点区域-->
+								<div id="dot">
+									<span data-index="0" class="on"></span>
+									<span data-index="1"></span>
+									<span data-index="2"></span>
+									<span data-index="3"></span>
+									<span data-index="4"></span>
+								</div>
+						</div>
+
+            <!--右侧公告区显示-->
+						<div class="info-show show-ab">
+							
+							<!--公告选项卡-->
+							<ul class="info-menu" id='info-menu'>
+								<li>
+									<a *href="#" class="active">综合</a>
+								</li>
+								<li>
+									<a *href="#">公告</a>
+								</li>
+								<li>
+									<a *href="#">活动</a>
+								</li>
+								<li>
+									<a *href="#">媒体 </a>
+								</li>
+							</ul>
+							<a class="info-add">+</a>
+							
+							<!--公告详情显示-->
+							<ul class="info-detail" id="info-detail">
+								<!--<li class="info-first">
+								<em></em>
+								<a href="#">
+									<span class="info-title">推荐</span>
+									<span class="info-txt ellipsis">《王者修仙》电脑版停运公告</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">4月4号停服声明</span>
+									<span class="date">04/04</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 12月16日9:00-11:00更新公告</span>
+									<span class="date">03/26</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 11月2日9:00-11:00更新公告</span>
+									<span class="date">11/12</span>
+								</a>
+							</li>
+							<li class="info-other">
+								<em></em>
+								<a href="#">
+									<span class="info-title">[公告]</span>
+									<span class="info-txt">《王者修仙》 11月15日9:00-11:00更新公告</span>
+									<span class="date">03/05</span>
+								</a>
+							</li>-->
+							</ul>
+						</div>
+					</div>
+					<script>
+           //用于显示选项卡列表
+						function menu_m(index) {
+							let html = '';
+							for(let i = 0; i < info[0].length; i++) {
+								if(i == 0) {
+									html += '<li class="info-first">';
+									html += '<em></em>'
+									html += '<a href="#">'
+									html += '<span class="info-title">' + info[index][i].title + '</span>'
+									html += '<span class="info-txt ellipsis">' + info[index][i].txt + '</span>'
+
+								} else if(index == 3) {
+									html += '<li class="info-other">';
+									html += '<em></em>'
+									html += '<a href="#">'
+									html += '<span class="info-title">' + info[index][i].title + '</span>'
+									html += '<span class="info-txt txt-color ellipsis ">' + info[index][i].txt + '</span>'
+									html += '<span class="date">' + info[index][i].data + '</span>'
+								} else {
+									html += '<li class="info-other">';
+									html += '<em></em>'
+									html += '<a href="#">'
+									html += '<span class="info-title">' + info[index][i].title + '</span>'
+									html += '<span class="info-txt ellipsis">' + info[index][i].txt + '</span>'
+									html += '<span class="date">' + info[index][i].data + '</span>'
+								}
+								html += '</a>'
+								html += '</li>'
+								document.getElementById('info-detail').innerHTML = html;
+							}
+						}
+						
+            //初始化
+						menu_m(0);
+						let menu = document.getElementById('info-menu');
+						let index = 0;
+						
+             //添加移入事件
+						for(let j = 0; j < info.length; j++) {
+							menu.getElementsByTagName('li')[j].onmousemove = () => {
+								menu_m(j);
+								chang(index, j);
+								index = j;
+							}
+						}
+
+            //正在执行的图片所对应的圆点样式
+						function chang(index, j) {
+							menu.getElementsByTagName('a')[index].className = '';
+							menu.getElementsByTagName('a')[j].className = 'active';
+						}
+					</script>
+					<!--轮播与公告区域结束-->
+
+					<!--游戏区域类别划分-->
+					<ul class="g-link">
+						<li>
+							<a href="#">
+								<span class="text-sort">游戏资料</span>
+								<img src="img/index/yxzl.png" alt="游戏资料" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="text-sort">攻略专区</span>
+								<img src="img/index/glzq.png" alt="攻略专区" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="text-sort">游戏礼包</span>
+								<img src="img/index/yxlb.png" alt="游戏礼包" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="text-sort">群组讨论</span>
+								<img src="img/index/qztl.png" alt="群组讨论" />
+							</a>
+						</li>
+					</ul>
+					<!--游戏区域类别划分结束-->
+
+					<!--门派展示区-->
+					<div class="g-section-show">
+						<div class="u-name">
+							<h2>
+							<em class="u-icon-left"></em>
+							<span class="v-show">门派展示</span>
+							<em class="u-icon-right"></em>
+						</h2>
+						</div>
+						<ul class="u-photo" id="u-photo">
+							<li class="photo-li">
+								<img class="img-active u-img" src="img/index/shengjiy-b.png" alt="神机营" />
+								<span class="u-race-active u-race">神机营</span>
+							</li>
+							<li>
+								<img class="u-img" src="img/index/changgemen-b.png" alt="长歌门" />
+								<span class="u-race">长歌门</span>
+							</li>
+							<li>
+								<img class="u-img" src="img/index/taoyuangu-b.png" alt="桃源谷" />
+								<span class="u-race">桃源谷</span>
+							</li>
+						</ul>
+						<ul class="introduce" id="introduce">
+							<li style="display: block;">
+								<img class="intro-img" src="img/index/shengjiy-m.png" alt="神机营" />
+								<div class="u-role">
+									<img class="u-role_race" src="img/index/shengjiy-txt.png" alt="" />
+									<span class="u-role-feature">血厚，攻高，近身作战</span>
+									<span class="u-role-desc"> 神机营的近战将帅气与强悍展现得淋漓尽致。超高的爆发，加上不俗的坦度，加上反伤机制，都让他不管在副本或对战中都占有一席之地。 </span>
+								</div>
+							</li>
+							<li style="display: none;">
+								<img class="intro-img" src="img/index/changgemen-m.png" alt="长歌门" />
+								<div class="u-role">
+									<img class="u-role_race" src="img/index/changgemen-txt.png" alt="" />
+									<span class="u-role-feature">控制，群伤，范围爆发</span>
+									<span class="u-role-desc"> 长歌门具有相较于战士职业更加强悍的aoe能力与控制能力，当然了坦度略低，pvp的时候要时刻谨记，留好核心控制技能，不要贸然被突脸一套带走。 </span>
+								</div>
+							</li>
+							<li style="display: none;">
+								<img class="intro-img" src="img/index/taoyuangu-m.png" alt="桃源谷" />
+								<div class="u-role">
+									<img class="u-role_race" src="img/index/taoyuangu-txt.png" alt="" />
+									<span class="u-role-feature">群攻，治疗，持续作战</span>
+									<span class="u-role-desc"> 作为牧师系的职业，除了伤害能力与控制之外，就是回复力了，三转之后的萝莉具有150%的攻击力加成的群奶量以及400%的单奶附带不俗的hot能力。 </span>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+					<!--门派展示区结束-->
+
+					<!--游戏特色区-->
+					<div class="g-section-features">
+						<!--游戏特色标题区-->
+						<div class="u-name">
+							<h2>
+							<em class="u-icon-left"></em>
+							<span class="v-show">游戏特色</span>
+							<em class="u-icon-right"></em>
+						</h2>
+						</div>
+						
+						<!--游戏特色轮播-->
+						<div class="feature-show">
+							<div class="feature-lunbo" id="container1">
+								<div id="list1" style="left:0px;top:0px">
+									<a href="#"><img src="img/index/dtxb.jpg" alt="地图寻宝"></a>
+									<a href="#"><img src="img/index/kamc.jpg" alt="跨服征战"></a>
+									<a href="#"><img src="img/index/yhjl.jpg" alt="异火精炼" ></a>
+									<a href="#"><img src="img/index/kamc.jpg" alt="可爱萌宠"></a>
+									<a href="#"><img src="img/index/dtxb.jpg" alt="地图寻宝"></a>
+								</div>
+								<div id="dot1">
+									<span data-index="0" class="on"></span>
+									<span data-index="1"></span>
+									<span data-index="2"></span>
+									<span data-index="3"></span>
+
+								</div>
+							</div>
+							<span class="arrow-left" id="pre1"></span>
+							<span class="arrow-right" id="next1"></span>
+						</div>
+					</div>
+					<!--游戏特色区结束-->
+
+					<!--返回首部按钮-->
+					<div class="top-btn">
+						<a class="re-top" href="#index-top"></a>
+					</div>
+				</div>
+				<!--主体样式结束-->
+
+				<!--后台联系区域-->
+				<div class="g-btns">
+					<ul class="g-btns-ul">
+						<li>
+							<a href="#">
+								<span class="contact-pic"></span>
+								<span class="contact-txt">在线客服</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="user-pic"></span>
+								<span class="contact-txt">玩家交流群</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="msg-pic"></span>
+								<span class="contact-txt">玩家留言</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--后台联系区域-->
+
+				<!--底部区域-->
+				<div class="g-footer">
+					<div class="g-footer-m">
+						<div class="u-link">
+							<a href="#" class="u-link-item">关于本站</a>
+							<a href="#" class="u-link-item">负责声明</a>
+							<a href="#" class="u-link-item">联系我们</a>
+							<a href="#" class="u-link-item">用户协议</a>
+						</div>
+						<p class="u-advice">
+							健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+						</p>
+						<p class="u-crdl">
+							<a href="#">网络文化经营许可证：</a>
+							<img src="img/normal/net_wh.png" alt="" />
+							<a href="#">闽网文[2018]9590-427号</a> <img src="img/normal/game_ba.png" alt="" />
+							<a href="#">[2018]M-CSG0169号 </a>
+							文明办网文明上网 纠纷处理 游戏适用年龄：16+
+							<a href="#">未成年人家长监护</a>
+						</p>
+						<p class="u-crdl">
+							新广出审[2017]8621号 软著登记号：2016SR368695 粤ICP备11010538号-7网络文化经营许可证 粤网文[2014]2168-467号 新出网证(粤)字049号
+						</p>
+						<p class="u-copyright">Copyright © 2006- 2020 web.4399.com</p>
+					</div>
+
+				</div>
+				<!--底部区域结束-->
+		</section>
+		<script type="text/javascript">
+			window.onload = () => {
+				let next_btn = document.getElementById("next");
+				let pre_btn = document.getElementById("pre");
+
+				let list = document.getElementById("list");
+				let container = document.getElementById("container");
+				let dots = document.getElementById("dot").getElementsByTagName("span");
+				let left = 0;
+
+				let auto = null;
+				let index = 0; // 当前显示图片的下标
+				let status = false; // 当前轮播图动画是否在执行
+
+				// 绑定下一个图片的按钮事件
+				next_btn.onclick = () => {
+
+					if(status) {
+						return false;
+					}
+
+					// status = true;
+					left = parseInt(list.style.left); // 现在起点的位置
+
+					let new_left = left - 640; // 终点的位置
+
+					if(new_left < -2560) {
+						new_left = 0;
+						list.style.left = new_left + "px";
+					}
+
+					// list.style.left = new_left+"px";
+
+					index = ++index > 4 ? 0 : index;
+					console.log(index);
+					// let offset = -1000;
+
+					animate(new_left);
+				}
+
+				// 绑定上一个图片的按钮事件
+				pre_btn.onclick = () => {
+
+					// 检查当前轮播图是否在执行动画中
+					if(status) {
+						return false;
+					}
+					// status = true;
+
+					left = parseInt(list.style.left); // 现在起点的位置
+					let new_left = left + 640; // 终点的位置
+					if(new_left > 0) {
+						new_left = -2560;
+						list.style.left = new_left + "px";
+					}
+
+					console.log(left);
+					// list.style.left = new_left+"px";
+
+					index = --index < 0 ? 4 : index;
+					console.log(index);
+					animate(new_left);
+				}
+
+				// 绑定鼠标移动进轮播图时，自动轮播停止
+				container.onmouseover = () => {
+					clearInterval(auto);
+				}
+
+				// 绑定鼠标移动出轮播图时，自动轮播重新开启
+				container.onmouseout = () => {
+					autoPlay();
+				}
+
+				// 绑定点击焦点图标的事件
+				for(let i = 0; i < dots.length; i++) {
+					dots[i].onclick = () => {
+						// alert(dots[i].getAttribute("data-index"))
+						if(index == i || status) {
+							return false;
+						}
+
+						// status = true;      // 把动画执行状态设为true
+						let new_index = i;
+						new_left = i * -640;
+
+						index = new_index;
+						list.style.left = new_left + "px";
+						animate(new_left);
+					}
+				}
+
+				// 左右轮播动画的方法
+				function animate(new_left) {
+
+					status = true; // 把动画执行状态设为true
+					let left = parseInt(list.style.left);
+					// let new_left = left+offset;             // 计算出终点位置
+					let offset = new_left - left; // 总移动距离
+					let interval = 10; // 速度的单位时间
+					let speed = offset / (640 / interval); // 在总移动距离下每个单位时间内移动的距离，也就是速度
+
+					function go() {
+						left = parseInt(list.style.left); // 当前位置
+						let next_left = left + speed; // 当前加上速度就是下一个单位时间所在位置
+						list.style.left = next_left + "px";
+
+						if(speed < 0 && next_left >= new_left || speed > 0 && next_left <= new_left) {
+							setTimeout(() => {
+								go();
+							}, interval)
+						} else {
+							list.style.left = new_left + "px"; // 由于移动可能会有一部偏差，所以最后时把list的位置强制放到终点上
+							changeDot();
+							status = false; // 动画结束，并且把动画状态设置为false
+						}
+					}
+
+					go();
+				}
+
+				// 自动轮播图片的方法
+				function autoPlay() {
+					auto = setInterval(() => {
+						next_btn.onclick(); // 每三秒触发下一个的按钮的事件
+					}, 3000);
+				}
+
+				// 检查并显示对应片图焦点图标签的方法
+				function changeDot() {
+					for(let i = 0; i < dots.length; i++) {
+						dots[i].className = "";
+					}
+					dots[index].className = "on";
+				}
+
+				autoPlay();
+
+			}
+		</script>
+		<script>
+			let photo = document.getElementById('u-photo');
+			let li = photo.getElementsByTagName('li');
+			let introduce = document.getElementById('introduce');
+			let introduce_li = introduce.getElementsByTagName('li')
+			for(let i = 0; i < li.length; i++) {
+				li[i].onclick = () => {
+					clearActive();
+					li[i].getElementsByTagName('img')[0].className = 'img-active u-img';
+					li[i].getElementsByTagName('span')[0].className = 'u-race-active u-race';
+					introduce_li[i].style.display = 'block';
+				}
+			}
+
+			function clearActive() {
+				for(let i = 0; i < li.length; i++) {
+					li[i].getElementsByTagName('img')[0].className = 'u-img';
+					li[i].getElementsByTagName('span')[0].className = 'u-race';
+					introduce_li[i].style.display = 'none';
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			let next_btn1 = document.getElementById("next1");
+			let pre_btn1 = document.getElementById("pre1");
+
+			let list1 = document.getElementById("list1");
+			let container1 = document.getElementById("container1");
+			let dots1 = document.getElementById("dot1").getElementsByTagName("span");
+			let left1 = 0;
+
+			let auto1 = null;
+			let index1 = 0; // 当前显示图片的下标
+			let status1 = false; // 当前轮播图动画是否在执行
+
+			// 绑定下一个图片的按钮事件
+			next_btn1.onclick = () => {
+
+				if(status1) {
+					return false;
+				}
+
+				// status = true;
+				left1 = parseInt(list1.style.left); // 现在起点的位置
+
+				let new_left1 = left1 - 1000; // 终点的位置
+
+				if(new_left1 < -3000) {
+					new_left1 = 0;
+					list1.style.left = new_left1 + "px";
+				}
+
+				// list.style.left = new_left+"px";
+
+				index1 = ++index1 > 3 ? 0 : index1;
+				console.log(index1);
+				// let offset = -1000;
+
+				animate(new_left1);
+			}
+
+			// 绑定上一个图片的按钮事件
+			pre_btn1.onclick = () => {
+
+				// 检查当前轮播图是否在执行动画中
+				if(status1) {
+					return false;
+				}
+				// status = true;
+
+				left1 = parseInt(list1.style.left); // 现在起点的位置
+				let new_left1 = left1 + 1000; // 终点的位置
+				if(new_left1 > 0) {
+					new_left1 = -3000;
+					list1.style.left = new_left1 + "px";
+				}
+
+				console.log(left1);
+				// list.style.left = new_left+"px";
+
+				index1 = --index1 < 0 ? 3 : index1;
+				console.log(index1);
+				animate(new_left1);
+			}
+
+			// 绑定鼠标移动进轮播图时，自动轮播停止
+			container1.onmouseover = () => {
+				clearInterval(auto);
+			}
+
+			// 绑定鼠标移动出轮播图时，自动轮播重新开启
+			container1.onmouseout = () => {
+				autoPlay();
+			}
+
+			// 绑定点击焦点图标的事件
+			for(let i = 0; i < dots1.length; i++) {
+				dots1[i].onclick = () => {
+					// alert(dots[i].getAttribute("data-index"))
+					if(index1 == i || status1) {
+						return false;
+					}
+
+					// status = true;      // 把动画执行状态设为true
+					let new_index1 = i;
+					new_left1 = i * -1000;
+
+					index1 = new_index1;
+					list1.style.left = new_left1 + "px";
+					animate(new_left1);
+				}
+			}
+
+			// 左右轮播动画的方法
+			function animate(new_left1) {
+
+				status1 = true; // 把动画执行状态设为true
+				let left1 = parseInt(list1.style.left);
+				// let new_left = left+offset;             // 计算出终点位置
+				let offset1 = new_left1 - left1; // 总移动距离
+				let interval1 = 10; // 速度的单位时间
+				let speed1 = offset1 / (1000 / interval1); // 在总移动距离下每个单位时间内移动的距离，也就是速度
+
+				function go() {
+					left1 = parseInt(list1.style.left); // 当前位置
+					let next_left1 = left1 + speed1; // 当前加上速度就是下一个单位时间所在位置
+					list1.style.left = next_left1 + "px";
+
+					if(speed1 < 0 && next_left1 >= new_left1 || speed1 > 0 && next_left1 <= new_left1) {
+						setTimeout(() => {
+							go();
+						}, interval1)
+					} else {
+						list1.style.left = new_left1 + "px"; // 由于移动可能会有一部偏差，所以最后时把list的位置强制放到终点上
+						changeDot();
+						status1 = false; // 动画结束，并且把动画状态设置为false
+					}
+				}
+
+				go();
+			}
+
+			// 自动轮播图片的方法
+			function autoPlay() {
+				auto = setInterval(() => {
+					next_btn1.onclick(); // 每三秒触发下一个的按钮的事件
+				}, 3000);
+			}
+
+			// 检查并显示对应片图焦点图标签的方法
+			function changeDot() {
+				for(let i = 0; i < dots1.length; i++) {
+					dots1[i].className = "";
+				}
+				dots1[index1].className = "on";
+			}
+
+			autoPlay();
+		</script>
+	</body>
+
+</html>

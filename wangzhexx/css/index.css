@@ -1,0 +1,563 @@
+.index-all {
+	background: url(../img/normal/bg1.jpg) no-repeat center top;
+	width: 100%;
+	min-width: 1200px;
+	background-color: #f6f6f6;
+}
+
+
+/*主体样式*/
+
+.g-content {
+	background: url(../img/normal/bg2.jpg) no-repeat center top;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*下载区域*/
+
+.g-download-index {
+	height: 106px;
+}
+
+.download-vide {
+	width: 195px;
+	height: 100%;
+	margin: 0 5px 0 0px;
+	/*background: oldlace;*/
+}
+
+.u-video {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/index/vido.jpg) no-repeat center top;
+}
+
+.u-video::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 44px;
+	height: 44px;
+	margin: -22px 0 0 -22px;
+	background: url(../img/normal/jinlintu.png) no-repeat -112px 0px;
+}
+
+.u-video:hover::before {
+	background: url(../img/normal/jinlintu.png) no-repeat 0px -92px;
+	cursor: pointer;
+}
+
+.download-ma {
+	position: relative;
+	width: 135px;
+	height: 100%;
+	margin: 0 11px 0 0px;
+	background: #FFFFFF;
+}
+
+.download-ma img {
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100px;
+	padding: 3px 0 0 5px;
+}
+
+.download-ma .m-line {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 100px;
+	height: 16px;
+	background: url(../img/normal/line.png) no-repeat center top;
+	animation: line-run 2s linear infinite;
+}
+
+@keyframes line-run {
+	from {
+		top: 0px
+	}
+	to {
+		top: 95px;
+	}
+}
+
+.download-ma .u-txt {
+	display: block;
+	float: left;
+	width: 20px;
+	font-size: 13px;
+	margin: 0px 0px 0px 9px;
+}
+
+.download-m-btns {
+	width: 188px;
+	height: 100%;
+	margin: 0 18px 0 0px;
+}
+
+.btn-computer {
+	width: 138px;
+	height: 100%;
+	background: url(../img/index/btn-computer.jpg) no-repeat;
+}
+
+.btn-computer:hover {
+	cursor: pointer;
+}
+
+
+/*下载区域结束*/
+
+
+/*轮播与公告区域*/
+
+.g-section-info {
+	position: relative;
+	min-height: 280px;
+	margin: 21px 0 0 0;
+	z-index: 1;
+	/*background: palegreen;*/
+}
+
+
+/*轮播*/
+
+.info-lunbo {
+	position: absolute;
+	float: left;
+	width: 640px;
+	height: 388px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#list {
+	width: 3200px;
+	position: absolute;
+	z-index: 1;
+}
+
+#list img {
+	float: left;
+	width: 640px;
+	min-height: 280px;
+	display: block;
+}
+
+#pre {
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.7);
+	line-height: 45px;
+	text-align: center;
+	font-size: 26px;
+	width: 45px;
+	color: #FFFFFF;
+	height: 45px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	margin-top: -56px;
+	left: 10px;
+	cursor: pointer;
+	display: none;
+	z-index: 2;
+}
+
+#next {
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.7);
+	line-height: 45px;
+	text-align: center;
+	font-size: 26px;
+	width: 45px;
+	color: #FFFFFF;
+	width: 45px;
+	height: 45px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	margin-top: -56px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+	z-index: 2;
+}
+
+#container:hover #pre,
+#container:hover #next {
+	display: block;
+}
+
+#pre:hover,
+#next:hover {
+	color: #FFD900;
+}
+
+#dot {
+	width: 640px;
+	height: 10px;
+	position: absolute;
+	top: 260px;
+	left: 450px;
+	z-index: 10;
+}
+
+#dot span {
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 0 5px;
+	float: left;
+	cursor: pointer;
+}
+
+#dot .on {
+	width: 20px;
+	background-color: #ff4527;
+}
+
+
+/*轮播与公告区域结束*/
+
+
+/*游戏区域类别划分*/
+
+.g-link {
+	position: relative;
+	width: 1222px;
+	height: 131px;
+	margin: 39px 0 0 0;
+	z-index: 3;
+}
+
+.g-link li {
+	display: inline-block;
+	width: 290px;
+	height: 130px;
+	margin-right: 10px;
+	background: url(../img/index/g-link-bg.jpg) no-repeat;
+}
+
+.g-link li a .text-sort {
+	display: inline-block;
+	position: relative;
+	margin: 38px 0px 0px 30px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	float: left;
+}
+
+.g-link li a .text-sort::after {
+	content: 'GO';
+	position: absolute;
+	top: 38px;
+	left: 0px;
+	width: 19px;
+	height: 16px;
+	z-index: 3;
+	color: #d9aa66;
+	border-radius: 50%;
+	background: white;
+	font-size: 12px;
+	padding: 3px;
+}
+
+.g-link li a img {
+	float: right;
+	transform: all .1s;
+}
+
+.g-link li a img:hover {
+	transform: scale(1.2);
+}
+
+
+/*游戏区域类别划分结束*/
+
+
+/*门派展示区*/
+
+.g-section-show {
+	height: 555px;
+	margin: 60px 0 0 0;
+	/*background: palegoldenrod;*/
+}
+
+.u-name .u-icon-left,
+.u-name .u-icon-right {
+	display: inline-block;
+	width: 206px;
+	height: 9px;
+	margin-bottom: 5px;
+}
+
+.u-name .u-icon-left {
+	background: url(../img/index/icon-left.png) no-repeat;
+}
+
+.u-name .u-icon-right {
+	background: url(../img/index/icon-right.png) no-repeat;
+}
+
+.u-name h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #d9aa67;
+	font-weight: 700;
+}
+
+.u-name h2 .v-show {
+	display: inline-block;
+	padding-top: 3px;
+}
+
+.u-photo {
+	margin: 70px 0 0 20px;
+	min-width: 273px;
+	height: 99px;
+}
+
+.u-photo>li {
+	position: relative;
+	float: left;
+}
+
+.u-photo>li .u-img {
+	position: relative;
+	float: left;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	margin: 0 20px 3px 0px;
+	box-shadow: 0 1px 5px #6a8fde;
+	border: 2px solid #9e9e9e;
+	background-color: #afafaf;
+	filter: grayscale(100%);
+}
+
+.u-photo>li .u-race {
+	display: block;
+	margin-left: 17px;
+	height: 17px;
+	font-size: 14px;
+	color: #6A6A6A;
+}
+
+.u-photo>li .u-img:hover {
+	border: 2px solid #adc9ff;
+	background: #c9d4e9;
+	box-shadow: 0 1px 5px #6a8fde;
+	filter: grayscale(0%);
+}
+
+.u-photo>li:hover .u-race {
+	font-weight: 700;
+	color: #b58749;
+	font-size: 14px;
+}
+
+.u-photo>li .u-race-active {
+	font-weight: 700;
+	color: #b58749;
+	font-size: 14px;
+}
+
+.u-photo>li .img-active {
+	border: 2px solid #adc9ff;
+	background: #c9d4e9;
+	box-shadow: 0 1px 5px #6a8fde;
+	filter: grayscale(0%);
+}
+
+.introduce {
+	position: relative;
+}
+
+.introduce .intro-img {
+	position: absolute;
+	top: -210px;
+	right: 0;
+	width: 747px;
+	height: 555px;
+	animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.introduce .u-role {
+	position: absolute;
+	left: 0;
+	margin: 45px 0 0 10px;
+	animation: u-role-run .2s linear;
+}
+
+@keyframes u-role-run {
+	from {
+		left: -100px;
+	}
+	50% {
+		left: -50px;
+	}
+	to {
+		left: 0px;
+	}
+}
+
+.u-role .u-role-race {
+	width: 305px;
+	height: 54px;
+}
+
+.u-role .u-role-feature {
+	display: block;
+	width: 496px;
+	margin-bottom: 10px;
+	margin-top: 12px;
+	font-size: 18px;
+	text-align: left;
+	font-weight: 700;
+	color: #D9AA67;
+}
+
+.u-role .u-role-desc {
+	display: block;
+	width: 496px;
+	color: #4d4d4d;
+	text-align: left;
+	text-indent: 3px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+/*门派展示区结束*/
+
+
+/*游戏特色区*/
+
+.g-section-features {
+	position: relative;
+	height: 610px;
+	margin: 90px 0 0 0;
+}
+
+.feature-show {
+	width: 1200px;
+	margin-top: 20px;
+	height: 530px;
+}
+
+.feature-show .feature-lunbo {
+	width: 1000px;
+	margin: 0 auto;
+	height: 530px;
+	overflow: hidden;
+}
+
+#container1 {
+	width: 1000px;
+	height: 530px;
+	position: relative;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+#list1 {
+	width: 7000px;
+	overflow: hidden;
+	height: 530px;
+	position: absolute;
+	z-index: 1;
+}
+
+#list1 img {
+	float: left;
+	width: 1000px;
+	height: 500px;
+	display: block;
+}
+
+#dot1 {
+	width: 1000px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 450px;
+	z-index: 10;
+}
+
+#dot1 span {
+	width: 20px;
+	height: 20px;
+	display: block;
+	border-radius: 50%;
+	background-color: #cacdd2;;
+	margin: 0 7px;
+	float: left;
+	cursor: pointer;
+}
+
+#dot1 .on {
+	background-color: #d9aa67;
+}
+
+.arrow-left {
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	margin-top: -44px;
+	width: 24px;
+	height: 88px;
+	cursor: pointer;
+	background: url('../img/normal/jinlintu.png') no-repeat -84px 0;
+}
+
+.arrow-right {
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	margin-top: -44px;
+	width: 24px;
+	height: 88px;
+	cursor: pointer;
+	background: url('../img/normal/jinlintu.png') no-repeat 0 0;
+}
+
+.arrow-left:hover {
+	background: url('../img/normal/jinlintu.png') no-repeat -56px 0px;
+}
+
+.arrow-right:hover {
+	background: url('../img/normal/jinlintu.png') no-repeat -28px 0;
+}
+
+.feature-lunbo img {
+	width: 1000px;
+	height: 500px;
+}
+
+
+/*游戏特色区结束*/
+
+
+/*主体样式结束*/
